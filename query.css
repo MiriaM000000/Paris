@@ -1,0 +1,406 @@
+
+@media only screen and (max-width: 650px){
+    /* FOOTER */
+    .formheading{
+        width: 70%;
+        font-size: 3rem;
+    }
+    .logo img{
+        width: 20%;
+    }
+    .contact{
+        width: 50%;
+    }
+    footer{
+        margin-top: 2%;
+    }
+
+    /* PHOTOGALLERY PARIS */
+    .slider{
+        width: 80%;
+        height: auto;
+    }
+    .slide img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .middle{
+        margin-left: 10%;
+
+    }
+    .navbar{
+        left: 50%;
+        top: 70%;
+    }
+    .nav{
+        width: 3rem;
+        height: 0.5rem;
+    }
+    .scrollParis{
+        width: 70%;
+        margin-left: 20%;
+        text-align: center;
+    }
+
+    /* PHOTOGALLERY MARIE CURIE */
+    .scrollCurie{
+        width: 50%;
+    }
+    .img5,.img2{
+        display: none;
+    }
+    .container{
+        width: 90%;
+        padding: 3%;
+    }
+    .photos{
+        background-size: 100% 18rem;
+        height: 18rem;
+        flex: 0.3;
+    }
+    .textCurie{
+        width: 90%;
+    }
+
+    /* 10 FACTS */
+    .scrollFacts{
+        width: 55%;
+    }
+    #myInput{
+        width: 45%;
+        left: 45%;
+    }
+    #myInput:focus{
+        width: 50%;
+    }
+    .output{
+        width: 80%;
+    }
+    .list{
+        width: 30%;
+        margin-top: 7%;
+    }
+    .keywords{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 620px){
+   /* RESPONSIVE MENU */
+    .iconHamb{
+       display: inline-block;
+       left: 88%;
+        z-index: 1000;
+   }
+   .bar{
+        float: none;
+       display: block;
+       padding: 5px;
+        z-index: 800;
+    }
+   .bar:hover{
+       width: 30%;
+       transform: none;
+       border-bottom: 2px solid rgba(244, 244, 29, 0.758);
+    }
+   .responsiveMenuBcg{
+       height: 25%;
+       background-color: black;
+       opacity: 0.6;
+       display: none;
+   }       
+   nav{
+    display: flex;
+    flex-direction: column;
+   }
+   }
+
+@media only screen and (min-width:651px) and (max-width: 750px){
+    /* FOOTER */
+    .formheading{
+        width: 70%;
+        font-size: 3rem;
+    }
+    .logo img{
+        width: 15%;
+    }
+    .contact{
+        width: 40%;
+    }
+    footer{
+        margin-top: 2%;
+    }
+    
+    /* PHOTOGALLERY PARIS */
+    .photos{
+        background-size: 100% 18rem;
+        height: 18rem;
+        flex: 0.2;
+    }
+    .slider{
+        width: 80%;
+        height: auto;
+    }
+    .middle{
+        margin-left: 10%;
+    }
+    .nav{
+        width: 3rem;
+        height: 0.8rem;
+    }  
+    .scrollParis{
+        width: 55%;
+    }
+    /* PHOTOGALLERY MARIE CURIE */
+         .scrollCurie{
+            width: 30%;
+        }
+        .container{
+            margin-top: 1%;
+            width: 90%;
+        }
+        .img2{
+            display: none;
+        }
+        .textCurie{
+            width: 90%;
+        }
+    
+        /* 10 FACTS */
+         .scrollFacts{
+            width: 45%;
+        }
+        #myInput{
+            width: 35%;
+            left: 45%;
+        }
+        #myInput:focus{
+            width: 40%;
+        }
+        .output{
+            width: 60%;
+        }
+        .list{
+            width: 25%;
+            margin-top: 4%;
+        }
+        .keywords{
+            width: 60%;
+        }
+}  
+
+@media only screen and (min-width:751px) and (max-width: 850px){
+        /* FOOTER */
+        .formheading{
+            width: 55%;
+            font-size: 3rem;
+        }
+        .logo img{
+            width: 15%;
+        }
+        .contact{
+            width: 40%;
+        }
+        footer{
+            margin-top: 2%;
+        }
+        /* PHOTOGALLERY PARIS */
+        .photos{
+            background-size: 100% 18rem;
+            height: 18rem;
+            flex: 0.2;
+        }
+        .slider{
+            width: 70%;
+            height: auto;
+        }
+        .middle{
+            margin-left: 15%;
+        }
+        .nav{
+            width: 3rem;
+            height: 0.8rem;
+        }  
+        .scrollParis{
+            width: 45%;
+        }
+        /* PHOTOGALLERY MARIE CURIE */
+        .scrollCurie{
+            width: 30%;
+        }
+        .container{
+            margin-top: 1%;
+            width: 80%;
+        }
+        .textCurie{
+            width: 90%;
+        }
+            /* 10 FACTS */
+            .scrollFacts{
+                width: 45%;
+            }
+            #myInput{
+                width: 35%;
+                left: 48%;
+            }
+            #myInput:focus{
+                width: 40%;
+            }
+            .output{
+                width: 60%;
+            }
+            .list{
+                width: 25%;
+                margin-top: 4%;
+            }
+            .keywords{
+                width: 90%;
+            }
+    
+}
+
+@media only screen and (min-width:851px) and (max-width: 950px){
+        /* FOOTER */
+        .formheading{
+            width: 50%;
+            font-size: 3rem;
+        }
+        .logo img{
+            width: 10%;
+        }
+        .contact{
+            width: 30%;
+        }
+        footer{
+            margin-top: 2%;
+        }
+        /* PHOTOGALLERY PARIS */
+        .photos{
+            background-size: 100% 18rem;
+            height: 18rem;
+            flex: 0.2;
+        }
+        .slider{
+            width: 60%;
+            height: auto;
+        }
+        .middle{
+            margin-left: 20%;
+        }
+        .nav{
+            width: 3rem;
+            height: 0.8rem;
+        }  
+        .scrollParis{
+            width: 40%;
+        }
+        /* PHOTOGALLERY MARIE CURIE */
+        .scrollCurie{
+            width: 25%;
+        }
+        .container{
+            margin-top: 1%;
+            width: 70%;
+        }
+        .textCurie{
+            width: 90%;
+        }
+            /* 10 FACTS */
+            .scrollFacts{
+                width: 40%;
+            }
+            #myInput{
+                width: 30%;
+                left: 46%;
+            }
+            #myInput:focus{
+                width: 35%;
+            }
+            .output{
+                width: 60%;
+            }
+            .list{
+                width: 25%;
+                margin-top: 4%;
+            }
+            .keywords{
+                width: 90%;
+                margin-left: 15%;
+            }
+}
+
+@media only screen and (min-width:951px) and (max-width: 1200px){
+        /* FOOTER */
+        .formheading{
+            width: 40%;
+            font-size: 3rem;
+        }
+        .logo img{
+            width: 10%;
+        }
+        .contact{
+            width: 30%;
+        }
+        footer{
+            margin-top: 2%;
+        }
+        /* PHOTOGALLERY PARIS */
+        .photos{
+            background-size: 100% 10rem;
+            height: 10rem;
+            flex: 0.2;
+        }
+        .slider{
+            width: 60%;
+            height: auto;
+        }
+        .middle{
+            margin-left: 20%;
+        }
+        .nav{
+            width: 3rem;
+            height: 0.8rem;
+        }  
+        .scrollParis{
+            width: 35%;
+        }
+        /* PHOTOGALLERY MARIE CURIE */
+        .scrollCurie{
+            width: 25%;
+        }
+        .container{
+            margin-top: 1%;
+            width: 60%;
+        }
+        .photos{
+            background-size: 100% 18rem;
+            height: 18rem;
+            flex: 0.2;
+        }
+        .textCurie{
+            width: 90%;
+        }
+            /* 10 FACTS */
+            .scrollFacts{
+                width: 35%;
+            }
+            #myInput{
+                width: 25%;
+                left: 46%;
+            }
+            #myInput:focus{
+                width: 30%;
+            }
+            .output{
+                width: 60%;
+            }
+            .list{
+                width: 25%;
+                margin-top: 4%;
+            }
+            .keywords{
+                width: 90%;
+                margin-left: 15%;
+            }
+}

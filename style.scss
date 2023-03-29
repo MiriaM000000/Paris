@@ -1,0 +1,346 @@
+@import "variables";
+@import "mixin";
+
+*{
+    @include forAll;
+}
+
+
+header{
+font-family: $font-heading;
+width: 100%;
+height: 100vh;
+margin: $margin-center;
+background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url("images/arch.jpg");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+// NAV-BAR
+.headingText{
+text-transform: uppercase;
+height: 20%;
+font-size: $heading-font;
+letter-spacing: 1rem;
+color:$main-color;
+margin-left: 15%;
+position: absolute;
+top: 40%;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.bar{
+    color: $main-color;
+    text-decoration: none;
+    font-size: $second-font;
+    margin-right: 1%;
+    margin-left: 1%;
+    font-family: $font-second;
+    transition: all .2s ease-in-out;
+    position: relative;
+    padding: 15px 0px;
+}
+
+.bar:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+// RESPONSIVE NAV
+.iconHamb{
+    position: absolute;
+    left: 95%;
+    top: 2%;
+    display: none;
+}
+
+// 10 facts
+#myInput{
+    font-family: $font-second;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+    width: 18%;
+    border: 2px solid #2515cf;
+    border-radius: 15px;
+    outline: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1%;
+}
+#myInput:focus{
+    width: 21%;
+    border: 2px solid #766bf0;
+    transition: all .2s ease-in-out;
+}
+
+.secondHeading{
+    font-family: $font-heading;
+    font-size: 2rem;
+    width: 27%;
+    margin: $margin-center;
+    margin-top: 5px;
+}
+.scrollCurie{
+    width: 18%;
+}
+.output{
+    width: 20%;
+    margin: $margin-center;   
+    margin-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.list{
+    font-family: $font-heading;
+    font-size: 1.2rem;
+    width: 13%;
+    margin: $margin-center;
+    margin-top: 3%;
+}
+.keywords{
+    @include Text;
+    width: 27%;
+    margin: $margin-center;
+    margin-top: 1%;
+}
+
+.game{
+    margin-top: 2%;
+    z-index: 500;
+}
+
+// footer
+.formheading{
+    font-family: $font-heading;
+    font-size: 3.2rem;
+    width: 30%;
+    text-align: center;
+    color: rgb(28, 28, 145);
+}
+footer{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(to right,rgba(35, 39, 119, 0.658),rgba(242, 236, 172, 0.576)), url(images/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 2%;
+}
+
+.logo img{
+    width: 8%;
+    height: 14%;
+    position:absolute;
+    left: 80%;
+    bottom: 5%;
+}
+.contact{
+    width: 20%;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+input{
+   @include Text;
+    width: 95%;
+    text-align: center;
+    margin-top: 3%;
+    padding: 10px;
+    outline: none;
+    border-radius: 24px;
+    border: none;
+}
+
+textarea{
+    @include Text;
+    width: 95%;
+    text-align: center;
+    margin-top: 3%;
+    padding: 10px;
+    outline: none;
+    border-radius: 24px;
+    border: none;
+}
+.name:focus,.lastName:focus,.email:focus{
+    border: 2px solid rgb(62, 62, 240);
+}
+textarea:focus{
+    border: 2px solid rgb(62, 62, 240);
+}
+input:focus::placeholder {
+    color: rgb(50, 50, 196);
+  }
+
+input:nth-of-type(1){
+    margin-top: 20px;
+}
+input:nth-of-type(3){
+    margin-bottom: 30px;
+    background-color: rgb(76, 76, 244);
+    color: black;
+}
+input:nth-of-type(3):hover{
+    cursor: pointer;
+    background-color: rgb(46, 46, 157);
+    color: white;
+}
+
+::placeholder{
+    color: black;
+    opacity: 0.8;
+}
+
+  
+// Photogallery Marie
+.container{
+    width: 60vw;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: $margin-center;
+    overflow: hidden;
+}
+.photos{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 22rem;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    margin-left: 1%;
+    flex: 0.3;
+    position: relative;
+    transition: flex 0.5s ease-in-out;
+}
+.photos h2{
+    @include Text; 
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    opacity: 0;
+}
+.text{
+    color: black;
+}
+.photos.active{
+    flex: 3;
+}
+.photos.active h2{
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.img1{
+    background-image: url(images/curie1.jpg);
+}
+.img2{
+    background-image: url(images/curie2.jpg);
+}
+.img3{
+    background-image: url(images/curie.jpg);
+}
+.img4{
+    background-image: url(images/curie3.jpg);
+}
+.img5{
+    background-image: url(images/radioactivity.jpg);
+    border: 1px solid rgb(153, 146, 146);
+}
+
+.textCurie{
+    @include Text;
+    width: 60vw;
+    margin: $margin-center;
+    text-align: justify;
+    margin-top: 1%;
+}
+
+
+// Photogallery Paris
+
+.slider{
+    position: relative;
+    width: 50%;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+}
+
+.middle{
+    margin-top: 3%;
+    margin-left: 25%;
+}
+
+.navbar{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+    z-index: 100;
+    display: flex;
+}
+
+.nav{
+    width: 4rem;
+    height: 0.8rem;
+    border: 2px solid white;
+    margin: 5px;
+    cursor: pointer;
+}
+.nav:hover{
+    background-color: white;
+}
+
+input[name="r"]{
+    display: none;
+}
+
+.point{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.7s;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+#r2:checked ~ .s1 {
+    margin-left: -20%;
+}
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+}
+#r4:checked ~ .s1 {
+    margin-left: -60%;
+}
+#r5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
